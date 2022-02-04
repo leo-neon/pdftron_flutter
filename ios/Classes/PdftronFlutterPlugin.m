@@ -2773,7 +2773,6 @@
     if (!documentController.bookmarkListHidden) {
         PTNavigationListsViewController *navigationListsViewController = documentController.navigationListsViewController;
         if (navigationListsViewController) {
-            navigationListsViewController.bookmarkViewController.view.tintColor = [UIColor colorWithRed:203.0/255.0 green:110.0/255.0 blue:121.0/255.0 alpha:1]; 
             navigationListsViewController.selectedViewController = navigationListsViewController.bookmarkViewController;
             [documentController showNavigationLists];
         }
@@ -2785,7 +2784,6 @@
 - (void)openThumbnailBrowser:(FlutterResult)flutterResult
 {
     PTDocumentController *documentController = [self getDocumentController];
-    documentController.thumbnailsViewController.view.tintColor = [UIColor colorWithRed:203.0/255.0 green:110.0/255.0 blue:121.0/255.0 alpha:1]; 
     // if (!documentController.bookmarkListHidden) {
         // PTNavigationListsViewController *navigationListsViewController = documentController.navigationListsViewController;
         // if (navigationListsViewController) {
