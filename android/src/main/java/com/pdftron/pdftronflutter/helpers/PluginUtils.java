@@ -773,7 +773,8 @@ public class PluginUtils {
         boolean isBase64 = false;
         String base64FileExtension = null;
 
-        pdfViewCtrlConfig.setClientBackgroundColor(0, 0, 0, false);
+        pdfViewCtrlConfig.SetClientBackgroundColor(0xFF000000);
+        pdfViewCtrlConfig.SetClientBackgroundColorDark(0xFF000000);
 
         if (configStr != null && !configStr.equals("null")) {
             try {
