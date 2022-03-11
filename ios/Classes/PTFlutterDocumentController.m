@@ -1098,6 +1098,7 @@ static BOOL PT_addMethod(Class cls, SEL selector, void (^block)(id))
     else if ([self.layoutMode isEqualToString:PTFacingCoverContinuousKey]) {
         [self.pdfViewCtrl SetPagePresentationMode:e_trn_facing_continuous_cover];
     }
+    [self.pdfViewCtrl SetBackgroundColor:0 g:0 b:0 a:255];
 }
 
 - (void)applyNavIcon
