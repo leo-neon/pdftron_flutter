@@ -773,6 +773,8 @@ public class PluginUtils {
         boolean isBase64 = false;
         String base64FileExtension = null;
 
+        pdfViewCtrlConfig.setClientBackgroundColor(0, 0, 0, false);
+
         if (configStr != null && !configStr.equals("null")) {
             try {
                 JSONObject configJson = new JSONObject(configStr);
