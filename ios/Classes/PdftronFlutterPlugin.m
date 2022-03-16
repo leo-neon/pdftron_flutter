@@ -2802,7 +2802,7 @@
     PTDocumentController *documentController = [self getDocumentController];
     // documentController.layoutMode = PTFacingKey;
     // [documentController setLayoutMode:PTFacingKey];
-    [documentController.pdfViewCtrl SetPagePresentationMode:e_trn_facing];
+    [documentController.pdfViewCtrl SetPagePresentationMode:e_trn_facing_cover];
     [documentController.pdfViewCtrl SetPageViewMode:e_trn_fit_height];
     [documentController.pdfViewCtrl SetPageRefViewMode:e_trn_fit_height];
     flutterResult(nil);

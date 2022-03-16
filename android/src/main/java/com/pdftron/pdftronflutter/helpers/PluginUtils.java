@@ -3170,7 +3170,7 @@ public class PluginUtils {
     private static void setHorizontal(MethodChannel.Result result, ViewerComponent component) throws PDFNetException {
         PDFViewCtrl pdfViewCtrl = component.getPdfViewCtrl();
         if (pdfViewCtrl != null) {
-            pdfViewCtrl.setPagePresentationMode(PDFViewCtrl.PagePresentationMode.FACING);
+            pdfViewCtrl.setPagePresentationMode(PDFViewCtrl.PagePresentationMode.FACING_COVER);
             pdfViewCtrl.setPageViewMode(PDFViewCtrl.PageViewMode.FIT_HEIGHT);
             pdfViewCtrl.setPreferredViewMode(PDFViewCtrl.PageViewMode.FIT_HEIGHT);
             // pdfViewCtrl.setPageRefViewMode(PDFViewCtrl.PageViewMode.FIT_HEIGHT);
