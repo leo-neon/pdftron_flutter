@@ -2384,6 +2384,10 @@ public class PluginUtils {
                 openThumbnailsView(result, component);
                 break;
             }
+            case FUNCTION_SET_CONTROLS_HIDDEN: {
+                
+                break;
+            }
             default:
                 Log.e("PDFTronFlutter", "notImplemented: " + call.method);
                 result.notImplemented();
