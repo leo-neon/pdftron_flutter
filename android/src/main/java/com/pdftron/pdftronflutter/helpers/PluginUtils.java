@@ -3579,6 +3579,7 @@ public class PluginUtils {
         if (component.getToolManager() != null) {
             component.getToolManager().setStylusAsPen(component.isUseStylusAsPen());
             component.getToolManager().setSignSignatureFieldsWithStamps(component.isSignSignatureFieldWithStamps());
+            component.getToolManager().setReadOnly(true);
         }
 
         addListeners(component);
