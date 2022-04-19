@@ -1190,10 +1190,10 @@
 -(void)documentController:(PTDocumentController*)documentController documentLoadedFromFilePath:(NSString*)filePath
 {
     NSLog(@"documentLoadedFromFilePath - callback");
-    // if(self.documentLoadedEventSink != nil)
-    // {
-    //     self.documentLoadedEventSink(filePath);
-    // }
+    if(self.documentLoadedEventSink != nil)
+    {
+        self.documentLoadedEventSink(filePath);
+    }
 }
 
 -(void)documentController:(PTDocumentController*)documentController documentError:(nullable NSError*)error
