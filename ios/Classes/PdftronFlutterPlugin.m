@@ -2803,8 +2803,8 @@
     // documentController.layoutMode = PTFacingKey;
     // [documentController setLayoutMode:PTFacingKey];
     [documentController.pdfViewCtrl SetPagePresentationMode:e_trn_facing_cover];
-    [documentController.pdfViewCtrl SetPageViewMode:e_trn_fit_height];
-    [documentController.pdfViewCtrl SetPageRefViewMode:e_trn_fit_height];
+    [documentController.pdfViewCtrl SetPageViewMode:e_trn_fit_page];
+    [documentController.pdfViewCtrl SetPageRefViewMode:e_trn_fit_page];
     flutterResult(nil);
 }
 
