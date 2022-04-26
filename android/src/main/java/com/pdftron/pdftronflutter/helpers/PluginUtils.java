@@ -3175,8 +3175,8 @@ public class PluginUtils {
         PDFViewCtrl pdfViewCtrl = component.getPdfViewCtrl();
         if (pdfViewCtrl != null) {
             pdfViewCtrl.setPagePresentationMode(PDFViewCtrl.PagePresentationMode.FACING_COVER);
-            pdfViewCtrl.setPageViewMode(PDFViewCtrl.PageViewMode.FIT_HEIGHT);
-            pdfViewCtrl.setPreferredViewMode(PDFViewCtrl.PageViewMode.FIT_HEIGHT);
+            pdfViewCtrl.setPageViewMode(PDFViewCtrl.PageViewMode.FIT_PAGE);
+            pdfViewCtrl.setPreferredViewMode(PDFViewCtrl.PageViewMode.FIT_PAGE);
             // pdfViewCtrl.setPageRefViewMode(PDFViewCtrl.PageViewMode.FIT_HEIGHT);
             result.success(null);
             return;
