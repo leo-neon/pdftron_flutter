@@ -2828,6 +2828,9 @@
 
     // Set the current view controller as the reflow view controller's delegate.
     reflowViewController.delegate = self;
+    reflowViewController.scale = 1.5;
+    reflowViewController.reflowManager.hideBackgroundImages = YES;
+    reflowViewController.reflowManager.hideImagesUnderText = YES;
 
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:reflowViewController];
     UIViewController *presentingViewController = UIApplication.sharedApplication.keyWindow.rootViewController;
