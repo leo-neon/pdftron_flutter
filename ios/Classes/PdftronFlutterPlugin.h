@@ -224,6 +224,7 @@ static NSString * const PTOpenNavigationListsKey = @"openNavigationLists";
 static NSString * const PTOpenThumbnailBrowserKey = @"openThumbnailBrowser";
 static NSString * const PTSetHorizontalKey = @"setHorizontal";
 static NSString * const PTSetVerticalKey = @"setVertical";
+static NSString * const PTEnableReaderModeKey = @"enableReaderMode";
 static NSString * const PTSetControlsHiddenKey = @"setControlsHidden";
 static NSString * const PTGetCurrentPageKey = @"getCurrentPage";
 static NSString * const PTExtractTextForPageKey = @"extractTextForPage";

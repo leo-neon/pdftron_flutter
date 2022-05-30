@@ -46,6 +46,7 @@ class Functions {
   static const openThumbnailBrowser = "openThumbnailBrowser";
   static const setHorizontal = "setHorizontal";
   static const setVertical = "setVertical";
+  static const enableReaderMode = "enableReaderMode";
   static const setControlsHidden = "setControlsHidden";
   static const getCurrentPage = "getCurrentPage";
   static const extractTextForPage = "extractTextForPage";

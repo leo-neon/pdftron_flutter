@@ -1408,6 +1408,8 @@
         [self setHorizontal:result];
     } else if ([call.method isEqualToString:PTSetVerticalKey]) {
         [self setVertical:result];
+    } else if ([call.method isEqualToString:PTEnableReaderModeKey]) {
+        [self enableReaderMode:result];
     } else if ([call.method isEqualToString:PTExtractTextForPageKey]) {
         NSNumber *page = [PdftronFlutterPlugin PT_idAsNSNumber:call.arguments[PTPageNumberArgumentKey]];
         [self extractTextForPage:result page:page];
@@ -2816,6 +2818,20 @@
     [documentController.pdfViewCtrl SetPagePresentationMode:e_trn_single_page];
     [documentController.pdfViewCtrl SetPageViewMode:e_trn_fit_width];
     [documentController.pdfViewCtrl SetPageRefViewMode:e_trn_fit_width];
+    flutterResult(nil);
+}
+
+- (void)enableReaderMode:(FlutterResult)flutterResult
+{
+    PTDocumentController *documentController = [self getDocumentController];
+    PTReflowViewController *reflowViewController = [[PTReflowViewController alloc] initWithPDFViewCtrl:documentController.pdfViewCtrl];
+
+    // Set the current view controller as the reflow view controller's delegate.
+    reflowViewController.delegate = self;
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:reflowViewController];
+    UIViewController *presentingViewController = UIApplication.sharedApplication.keyWindow.rootViewController;
+    [presentingViewController presentViewController:navigationController animated:YES completion:nil];
     flutterResult(nil);
 }
 

@@ -250,6 +250,10 @@ class DocumentViewController {
     return _channel.invokeMethod(Functions.setVertical);
   }
 
+  Future<void> enableReaderMode() {
+    return _channel.invokeMethod(Functions.enableReaderMode);
+  }
+
   Future<void> setControlsHidden(bool hidden) {
     return _channel.invokeMethod(Functions.setControlsHidden, <String, dynamic>{
       Parameters.hidden: hidden,
