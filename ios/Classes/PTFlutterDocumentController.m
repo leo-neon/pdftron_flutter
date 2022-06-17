@@ -109,7 +109,7 @@ static BOOL PT_addMethod(Class cls, SEL selector, void (^block)(id))
 {
     self.local = [url isFileURL];
     self.documentLoaded = NO;
-    self.needsDocumentLoaded = NO;
+    self.needsDocumentLoaded = YES;
     self.needsRemoteDocumentLoaded = NO;
 
     [super openDocumentWithURL:url password:password];
@@ -118,7 +118,7 @@ static BOOL PT_addMethod(Class cls, SEL selector, void (^block)(id))
 - (void)openDocumentWithPDFDoc:(PTPDFDoc *)document
 {
     self.local = YES;
-    self.documentLoaded = NO;
+    self.documentLoaded = YES;
     self.needsDocumentLoaded = NO;
     self.needsRemoteDocumentLoaded = NO;
 
