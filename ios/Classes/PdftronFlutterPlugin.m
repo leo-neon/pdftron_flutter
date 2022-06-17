@@ -1635,10 +1635,10 @@
     }
     NSLog(@"HANDLE DOCUMENT OPEN - CONFIGURED");
     [documentController applyLayoutMode];
-    if(self.documentLoadedEventSink != nil)
-    {
-        self.documentLoadedEventSink(nil);
-    }
+    // if(self.documentLoadedEventSink != nil)
+    // {
+    //     self.documentLoadedEventSink(nil);
+    // }
 }
 
 - (void)importAnnotations:(NSString *)xfdf resultToken:(FlutterResult)flutterResult
