@@ -1634,7 +1634,7 @@
         documentController.docCtrlrConfigured = YES;
     }
     NSLog(@"HANDLE DOCUMENT OPEN - CONFIGURED");
-    [documentController applyLayoutMode];
+    // [documentController applyLayoutMode];
     // if(self.documentLoadedEventSink != nil)
     // {
     //     self.documentLoadedEventSink(nil);
