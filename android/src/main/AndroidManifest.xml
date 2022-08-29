@@ -6,9 +6,9 @@
         <!-- Document viewer activity declaration-->
         <activity
             android:name=".FlutterDocumentActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:theme="@style/PDFTronAppTheme"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustResize" />
 
     </application>
 
