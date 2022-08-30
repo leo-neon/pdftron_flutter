@@ -3181,7 +3181,8 @@ public class PluginUtils {
             result.success(null);
             return;
         }
-        result.error("Invalid state", "could not set orientation", null);
+        // result.error("Invalid state", "could not set orientation", null);
+        result.success(null);
         return;
     }
     private static void setVertical(MethodChannel.Result result, ViewerComponent component) throws PDFNetException {
@@ -3194,7 +3195,8 @@ public class PluginUtils {
             result.success(null);
             return;
         }
-        result.error("Invalid state", "could not set orientation", null);
+        // result.error("Invalid state", "could not set orientation", null);
+        result.success(null);
         return;
     }
 
