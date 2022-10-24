@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL local;
 @property (nonatomic) BOOL needsDocumentLoaded;
 @property (nonatomic) BOOL needsRemoteDocumentLoaded;
-@property (nonatomic) BOOL documentLoaded;
+@property (nonatomic, assign, getter=isDocLoaded) BOOL documentLoaded;
 
 // viewer options
 @property (nonatomic, copy, nullable) NSString* layoutMode;

@@ -1025,7 +1025,7 @@
 - (void)documentControllerDidOpenDocument:(PTDocumentController *)documentController
 {
     NSLog(@"Document opened successfully");
-    if (!documentController.documentLoaded) {
+    if (documentController.isDocLoaded == NO) {
         return;
     }
     FlutterResult result = ((PTFlutterDocumentController*)documentController).openResult;
