@@ -2819,8 +2819,8 @@
     // documentController.layoutMode = PTSingleKey;
     // [documentController setLayoutMode:PTSingleKey];
     [documentController.pdfViewCtrl SetPagePresentationMode:e_trn_single_page];
-    [documentController.pdfViewCtrl SetPageViewMode:e_trn_fit_width];
-    [documentController.pdfViewCtrl SetPageRefViewMode:e_trn_fit_width];
+    [documentController.pdfViewCtrl SetPageViewMode:e_trn_fit_page];
+    [documentController.pdfViewCtrl SetPageRefViewMode:e_trn_fit_page];
     flutterResult(nil);
 }
 
